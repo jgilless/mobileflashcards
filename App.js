@@ -48,7 +48,7 @@ const Tabs = TabNavigator(
     tabBarOptions: {
       activeTintColor: Platform.OS === "ios" ? green : white,
       style: {
-        height: Constants.statusBarHeight,
+        height: 56,
         backgroundColor: Platform.OS === "ios" ? white : green,
         shadowColor: "rgba(0, 0, 0, 0.24)",
         shadowOffset: {
