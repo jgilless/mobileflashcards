@@ -66,7 +66,6 @@ class DeckList extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log(nextProps);
     this._getDecks();
   }
 

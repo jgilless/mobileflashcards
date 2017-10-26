@@ -23,18 +23,12 @@ class AddCard extends Component {
     const { question, answer } = this.state;
     const { title } = navigation.state.params;
 
-    addCardToDeck(title, { question: question, answer: answer });
-
-    navigation.navigate(
-      "DeckList",
-      {
-        action: "addcard",
-        title: title,
-        question: question,
-        answer: answer
-      },
-      "Reset"
-    );
+    addCardToDeck(title, {
+      question: question,
+      answer: answer
+    }).then(results => {
+      navigation.navigate("DeckList");
+    });
   };
 
   render() {
