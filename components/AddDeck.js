@@ -5,7 +5,7 @@ import { white, gray, green } from "../utils/colors";
 
 import { saveDeckTitle } from "../utils/api";
 
-class NewDeck extends Component {
+class AddDeck extends Component {
   state = {
     title: ""
   };
@@ -71,4 +71,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default NewDeck;
+export default AddDeck;

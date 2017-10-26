@@ -13,6 +13,9 @@ import { getDecks } from "../utils/api";
 import { white, gray } from "../utils/colors";
 
 function Deck({ title, questions, navigation, ...props }) {
+  if (!questions) {
+    return null;
+  }
   return (
     <TouchableOpacity
       onPress={() =>
@@ -65,7 +68,7 @@ class DeckList extends Component {
     this._getDecks();
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps() {
     this._getDecks();
   }
 

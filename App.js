@@ -5,11 +5,11 @@ import { Constants } from "expo";
 import { green, white } from "./utils/colors";
 import { MaterialIcons } from "@expo/vector-icons";
 
-import DeckList from "./components/decklist";
-import NewDeck from "./components/newdeck";
-import DeckDetail from "./components/deckdetail";
-import AddCard from "./components/addcard";
-import Quiz from "./components/quiz";
+import DeckList from "./components/DeckList";
+import NewDeck from "./components/AddDeck";
+import DeckDetail from "./components/DeckDetail";
+import AddCard from "./components/AddCard";
+import Quiz from "./components/Quiz";
 import { setLocalNotification } from "./utils/helpers";
 
 function ViewBar({ backgroundColor, ...props }) {
